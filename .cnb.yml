@@ -2,15 +2,15 @@ $:
   push:
     - services:
         - docker
-      imports: https://cnb.cool/jaguarliu.cool/dify-tool/keys/-/blob/main/git_token.yml
+      imports: https://cnb.cool/AIAIAIAI111/AI-DIFY-PLUING/-/blob/549970fdc363d6b4db02aa871b7249a6b2758162/git_token.yml
       docker:
         build: .ide/Dockerfile
       stages:
         - name: sync to github
           image: tencentcom/git-sync
           settings:
-            target_url: https://github.com/jaguarliuu/rookie_text2data.git
+            target_url: https://github.com/chenmaolin928/ai-dify.git
             auth_type: https
             username: $GIT_USERNAME
             password: $EUMENIDES_TOKEN
-            branch: $CNB_BRANCH
+            branch: main
